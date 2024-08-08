@@ -1,0 +1,45 @@
+@media screen and (max-width: 600px){
+  body {
+    overflow: auto;
+
+    .navbar{
+      max-width: 100%;
+    }
+    #home{
+      padding:0 !important;
+
+      .pc{
+        display:none;
+      }
+      .sp{
+        display:block !important;
+        margin: 0 auto;
+        padding-top:100px;
+      }
+
+      .search{
+        max-width: 100%;
+        padding:50px 10px;
+      }
+    }
+    main{
+      margin-top: 0 !important;
+      display: block;
+      text-align: center;
+      margin-bottom: 100px;
+
+      .movie,.tvshow  {
+        h3{
+          margin-left: 0 !important;
+        }
+        ul {
+          flex-direction: column;
+        }
+      }
+    }
+    footer {
+    display: block !important;
+    padding: 40px; 
+    }
+  }
+}

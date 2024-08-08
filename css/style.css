@@ -1,0 +1,162 @@
+@media screen and (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+  body .navbar {
+    max-width: 100%;
+  }
+  body #home {
+    padding: 0 !important;
+  }
+  body #home .pc {
+    display: none;
+  }
+  body #home .sp {
+    display: block !important;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  body #home .search {
+    max-width: 100%;
+    padding: 50px 10px;
+  }
+  body main {
+    margin-top: 0 !important;
+    display: block;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  body main .movie h3, body main .tvshow h3 {
+    margin-left: 0 !important;
+  }
+  body main .movie ul, body main .tvshow ul {
+    flex-direction: column;
+  }
+  body footer {
+    display: block !important;
+    padding: 40px;
+  }
+}
+body {
+  width: 100%;
+  margin: 0;
+}
+body .navbar {
+  width: 100%;
+  padding-top: 1px;
+}
+body #home {
+  display: block;
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 200px;
+}
+body #home .pc {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+body #home .sp {
+  display: none;
+}
+body #home .search {
+  width: 600px;
+  margin: 0 auto;
+}
+body .main {
+  width: 100%;
+  display: block;
+}
+body .main .movie, body .main .tvshow {
+  margin-bottom: 30px;
+}
+body .main .movie h3, body .main .tvshow h3 {
+  margin-bottom: 0;
+  margin-left: 60px;
+}
+body .main .movie ul, body .main .tvshow ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+body .main .movie ul li, body .main .tvshow ul li {
+  list-style: none;
+  margin: 15px;
+}
+body .main .movie ul li .movie-img, body .main .movie ul li .tv-img, body .main .tvshow ul li .movie-img, body .main .tvshow ul li .tv-img {
+  width: 240px;
+}
+body .main .movie ul li .movie-img:hover, body .main .movie ul li .tv-img:hover, body .main .tvshow ul li .movie-img:hover, body .main .tvshow ul li .tv-img:hover {
+  cursor: pointer;
+}
+body .main .movie .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+body .main .movie .modal .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+body .main .movie .modal .modal-content .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main .movie .modal .modal-content .container .modal-img {
+  width: 50%;
+}
+body .main .movie .modal .modal-content .container .overview {
+  padding-left: 20px;
+  align-items: flex-end;
+}
+body .main .movie .modal .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+body .main .movie .modal .close:hover, body .main .movie .modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .search-result {
+  display: none;
+}
+body .search-result.appearResult {
+  display: block;
+}
+body .search-result h3 {
+  margin-bottom: 0;
+  margin-left: 60px;
+}
+body .search-result ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+body .search-result ul li {
+  list-style: none;
+  margin: 15px;
+}
+body .search-result ul li .search-img {
+  width: 240px;
+}
+body .search-result ul li .search-img:hover {
+  cursor: pointer;
+}
+body footer {
+  padding-top: 30px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
