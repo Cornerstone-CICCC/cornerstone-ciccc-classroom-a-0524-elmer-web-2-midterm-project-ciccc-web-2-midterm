@@ -32,7 +32,6 @@ Below are some of the endpoints you might use on the website. You are free to us
 
 - [https://developer.themoviedb.org/reference/trending-movies]
 - [https://developer.themoviedb.org/reference/trending-tv]
-- [https://developer.themoviedb.org/reference/search-keyword]
 - [https://developer.themoviedb.org/reference/search-multi]
 
 ## Presentation 📽️
