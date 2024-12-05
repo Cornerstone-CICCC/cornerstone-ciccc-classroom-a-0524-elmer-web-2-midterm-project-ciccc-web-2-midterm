@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="navbars fixed-top">
+      <nav class="navbar navbar-expand-lg" style="background-color:#FF5248">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id = "navbar_logo_light" class ="light_mode" src="/image/navbar_logo_light.PNG"><img id = "navbar_logo_dark" class = "dark_mode" src="/image/navbar_logo_dark.PNG"></a>
+          <div class ="switch" id="sp-switch">
+            <ul>
+              <li class="sun">
+                <a class="nav-link text-white active"><img src="image/sun.svg"></a>
+              </li>
+              <li class="moon">
+                <a class="nav-link text-white"><img src="image/moon.svg"></a>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#home" id="home-btn">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="/about.html" id="home-btn">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" id = "movie-result">Movie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" id = "tvshow-result">TVShow</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+              </li>
+            </ul>
+            <div class ="switch">
+              <ul>
+                <li class="sun">
+                  <a class="nav-link text-white active"><img src="image/sun.svg"></a>
+                </li>
+                <li class="moon">
+                  <a class="nav-link text-white"><img src="image/moon.svg"></a>
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="search">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="home">
+      <img id = "pc_light" class ="light_mode" src="/image/logo_lightmode.PNG" alt="logo" >
+      <img id = "pc_dark" class ="dark_mode" src="/image/logo_darkmode.PNG" alt="logo" >
+      <div class="search">
+        <form class="d-flex" role="search">
+          <div class="input-group mb-3">
+          <input type="search" class="form-control" placeholder="movie or video title..." aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="submit" id="search">Search</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="movie">
+      <h3>MOVIE</h3>
+        <ul>
+          <li><img class="movie-img" src="image/240X270.png"></li>
+          <li><img class="movie-img" src="image/240X270.png"></li>
+          <li><img class="movie-img" src="image/240X270.png"></li>
+          <li><img class="movie-img" src="image/240X270.png"></li>
+          <li><img class="movie-img" src="image/240X270.png"></li>
+        </ul>
+    </div>
+    <div class="tvshow">
+      <h3>TV SHOW</h3>
+        <ul>
+          <li><img class="tv-img" src="image/240X270.png"></li>
+          <li><img class="tv-img" src="image/240X270.png"></li>
+          <li><img class="tv-img" src="image/240X270.png"></li>
+          <li><img class="tv-img" src="image/240X270.png"></li>
+          <li><img class="tv-img" src="image/240X270.png"></li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="container">
+        <img class="modal-img">
+        <div class="overview">
+          <h2>Title</h2>
+          <p>Details</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search_results">  
+    <h3 class="name"></h3>
+  </div>
+  
+  <div class="search-result">
+    <h3 class="keyword"></h3>
+    <ul>
+      <li><img class="search-img" src="image/240X270.png"></li>
+      <li><img class="search-img" src="image/240X270.png"></li>
+      <li><img class="search-img" src="image/240X270.png"></li>
+      <li><img class="search-img" src="image/240X270.png"></li>
+      <li><img class="search-img" src="image/240X270.png"></li>
+    </ul>
+    <ul>
+      <li><img class="search-img" src="image/240X270.png"></li>
+      <li><img class="search-img" src="image/240X270.png"></li>
+      <li><img class="search-img" src="image/240X270.png"></li>
+      <li><img class="search-img" src="image/240X270.png"></li>
+      <li><img class="search-img" src="image/240X270.png"></li>
+    </ul>
+  </div>
+  
+  <footer>
+    <a>Copyright © MOVIE All Rights Reserved.</a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+  <script src = "/app.js"></script>
+  <script src = "/script.js"></script>
+</body>
+</html>

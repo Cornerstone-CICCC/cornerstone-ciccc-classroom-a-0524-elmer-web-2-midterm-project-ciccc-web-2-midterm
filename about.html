@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="navbars fixed-top">
+      <nav class="navbar navbar-expand-lg" style="background-color:#FF5248">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id = "navbar_logo_light" class ="light_mode" src="/image/navbar_logo_light.PNG"><img id = "navbar_logo_dark" class = "dark_mode" src="/image/navbar_logo_dark.PNG"></a>
+          <div class ="switch" id="sp-switch">
+            <ul>
+              <li class="sun">
+                <a class="nav-link text-white active"><img src="image/sun.svg"></a>
+              </li>
+              <li class="moon">
+                <a class="nav-link text-white"><img src="image/moon.svg"></a>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="/index.html" id="home-btn">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="/about.html" id="home-btn">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html" id = "movie-result">Movie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/index.html" id = "tvshow-result">TVShow</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+              </li>
+            </ul>
+            <div class ="switch">
+              <ul>
+                <li class="sun">
+                  <a class="nav-link text-white active"><img src="image/sun.svg"></a>
+                </li>
+                <li class="moon">
+                  <a class="nav-link text-white"><img src="image/moon.svg"></a>
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="search">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="abouts">
+    <img id = "pc_light" class ="light_mode" src="/image/logo_lightmode.PNG" alt="logo" >
+      <img id = "pc_dark" class ="dark_mode" src="/image/logo_darkmode.PNG" alt="logo" >
+    <div class="about">
+      <h1>About Us</h1>
+      <h3>Welcome to Cinema.com</h3>
+        
+        <p>At Cinema.come, we are passionate about helping you discover your next favorite film. Our site is dedicated to bringing you a curated selection of the best movies from various genres, ensuring that you always have something new and exciting to watch.</p>
+        
+        <h3>Our Mission</h3>
+        
+        <p>Our mission is to make movie discovery enjoyable and effortless. Whether you are a fan of heart-pounding thrillers, heartwarming dramas, or light-hearted comedies, our platform provides personalized recommendations to match your tastes. We believe that everyone deserves a great movie experience, and we're here to make that happen.</p>
+        
+        <h3>How It Works</h3>
+        
+          <ul>
+            <li> <p>
+              Curated Lists: Explore our handpicked lists of must-watch films, including top picks, hidden gems, and seasonal favorites.
+            </p></li>
+            <li><p>
+              Seamless Search: Easily search for movies by title, genre, or keywords to quickly find what you're looking for.
+            </p></li>
+          </ul>
+  
+       <h3>Our Story</h3>
+        <p>Founded by a team of movie lovers, MovieMagic started as a small project with a big vision – to create a community where film fans can find the best movies without the hassle. With a commitment to excellence and a passion for cinema, we've grown into a trusted resource for movie recommendations and reviews.</p>
+    
+        <h3>Get In Touch</h3>
+        
+       <p>We'd love to hear from you! Whether you have suggestions, feedback, or just want to chat about movies, feel free to reach out to us:
+        
+        Email: contact@moviemagic.com
+        Social Media: Follow us on Facebook, Twitter, and Instagram
+        Thank you for being a part of the MovieMagic community. Happy watching!</p> 
+    </div>
+  </div>
+  <footer>
+    <a>Copyright © MOVIE All Rights Reserved.</a>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+  <script src = "/app.js"></script>
+  <script src = "/script.js"></script>
+</body>
+</html>
